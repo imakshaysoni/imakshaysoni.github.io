@@ -155,14 +155,6 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   link={`https://www.researchgate.net/profile/${social.researchGate}`}
                 />
               )}
-             {social?.mastodon && (
-                <ListItem
-                  icon={<FaMastodon />}
-                  title="LeetCode:"
-                  value={social.researchGate}
-                  link="https://leetcode.com/iamakshaysoni/"
-                />
-              )}
               {social?.twitter && (
                 <ListItem
                   icon={<SiTwitter />}
@@ -174,9 +166,9 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.mastodon && (
                 <ListItem
                   icon={<FaMastodon />}
-                  title="Mastodon:"
+                  title="LeetCode:"
                   value={getFormattedMastodonValue(social.mastodon, false)}
-                  link={getFormattedMastodonValue(social.mastodon, true)}
+                  link='https://leetcode.com/iamakshaysoni/'
                 />
               )}
               {social?.linkedin && (

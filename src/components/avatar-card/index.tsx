@@ -83,7 +83,8 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
             rel="noreferrer"
             onClick={() => {
-              window.location.href = resumeFileUrl; // Redirect to resumeFileUrl
+              e.preventDefault(); // Prevent the default behavior of the anchor tag
+              window.open(resumeFileUrl, '_blank'); // Open resumeFileUrl in a new window
             }}
           >
             Resume

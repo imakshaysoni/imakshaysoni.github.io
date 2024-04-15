@@ -128,11 +128,6 @@ interface Social {
   researchGate?: string;
 
   /**
-   * LeetCode username
-   */
-  leetcode?: string;
-
-  /**
    * Facebook
    */
   facebook?: string;

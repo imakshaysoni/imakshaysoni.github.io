@@ -58,9 +58,8 @@ const CONFIG = {
   },
   social: {
     linkedin: 'imakshaysoni',
-    leetcode: 'iamakshaysoni',
     twitter: '',
-    mastodon: '',
+    mastodon: 'iamakshaysoni',
     researchGate: '',
     facebook: '',
     instagram: '',
