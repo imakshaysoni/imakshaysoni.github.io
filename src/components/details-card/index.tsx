@@ -155,6 +155,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   link={`https://www.researchgate.net/profile/${social.researchGate}`}
                 />
               )}
+             {social?.mastodon && (
+                <ListItem
+                  icon={<FaMastodon />}
+                  title="LeetCode:"
+                  value={getFormattedMastodonValue(social.mastodon, false)}
+                  link="https://leetcode.com/iamakshaysoni/"
+                />
+              )}
               {social?.twitter && (
                 <ListItem
                   icon={<SiTwitter />}

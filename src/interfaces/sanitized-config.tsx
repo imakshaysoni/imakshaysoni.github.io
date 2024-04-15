@@ -47,6 +47,7 @@ export interface SanitizedSocial {
   twitter?: string;
   mastodon?: string;
   researchGate?: string;
+  leetcode?: string,
   facebook?: string;
   instagram?: string;
   youtube?: string;
