@@ -76,22 +76,19 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               : profile.bio}
           </div>
         </div>
-        {resumeFileUrl &&
-          (loading ? (
-            <div className="mt-6">
-              {skeleton({ widthCls: 'w-40', heightCls: 'h-8' })}
-            </div>
-          ) : (
-            <a
-              href={resumeFileUrl}
-              target="_blank"
-              className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
-              download
-              rel="noreferrer"
-            >
-              Resume
-            </a>
-          ))}
+        {resumeFileUrl && (
+          <a
+            href={resumeFileUrl}
+            target="_blank" // Open the link in a new tab
+            className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
+            rel="noreferrer"
+            onClick={() => {
+              window.location.href = resumeFileUrl; // Redirect to resumeFileUrl
+            }}
+          >
+            Resume
+          </a>
+        )}
       </div>
     </div>
   );
