@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['imakshaysoni/gitprofile', 'imakshaysoni/resume'], // List of repository names to display. example: ['imakshaysoni/my-project1', 'imakshaysoni/my-project2']
+        projects: ['imakshaysoni/resume'], // List of repository names to display. example: ['imakshaysoni/my-project1', 'imakshaysoni/my-project2']
       },
     },
     external: {
@@ -229,7 +229,7 @@ const CONFIG = {
 
   // Optional Footer. Supports plain text or HTML.
   footer: `Made with <a 
-      class="text-primary" href="https://github.com/imakshaysoni"
+      class="text-primary" href="https://github.com/imakshaysoni/gitprofile"
       target="_blank"
       rel="noreferrer"
     >GitProfile</a> and ❤️`,
