@@ -159,7 +159,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                 <ListItem
                   icon={<FaMastodon />}
                   title="LeetCode:"
-                  value={getFormattedMastodonValue(social.mastodon, false)}
+                  value={social.researchGate}
                   link="https://leetcode.com/iamakshaysoni/"
                 />
               )}
