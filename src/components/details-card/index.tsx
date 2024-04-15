@@ -149,10 +149,10 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               />
               {social?.researchGate && (
                 <ListItem
-                  icon={<SiResearchgate />}
-                  title="ResearchGate:"
+                  icon={<FaMastodon />}
+                  title="LeetCode:"
                   value={social.researchGate}
-                  link={`https://www.researchgate.net/profile/${social.researchGate}`}
+                  link='https://leetcode.com/iamakshaysoni/'
                 />
               )}
               {social?.twitter && (
@@ -166,9 +166,9 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.mastodon && (
                 <ListItem
                   icon={<FaMastodon />}
-                  title="LeetCode:"
-                  value={social.researchGate}
-                  link='https://leetcode.com/iamakshaysoni/'
+                  title="Mastodon:"
+                  value={getFormattedMastodonValue(social.mastodon, false)}
+                  link={getFormattedMastodonValue(social.mastodon, true)}
                 />
               )}
               {social?.linkedin && (

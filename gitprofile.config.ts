@@ -59,8 +59,8 @@ const CONFIG = {
   social: {
     linkedin: 'imakshaysoni',
     twitter: '',
-    mastodon: 'iamakshaysoni',
-    researchGate: '',
+    mastodon: '',
+    researchGate: 'iamakshaysoni',
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
